@@ -1,0 +1,106 @@
+@import 'theme/theme';
+@import 'owl.carousel/dist/assets/owl.carousel.min';
+.index {
+    background-color: $pink;
+    main {
+        .main-bg {
+            position: relative;
+            &::before {
+                width: 100%;
+                height: 100%;
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                background-image: url("../img/landing-img.png");
+                background-position: top center;
+                background-repeat: no-repeat;
+                z-index: -1;
+                background-size: contain;
+            }
+        }
+    }
+    .read-more-link {
+        font-size: .875rem;
+        font-weight: 600;
+        color: $red;
+        &:hover {
+            color: $red;
+        }
+        &::before,
+        &::after {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $white;
+            width: 1.125rem;
+            height: 1.125rem;
+            border-radius: 50px;
+            @include icon-styles;
+            content: icon-char(minus);
+            color: $red;
+            font-size: 0.6rem;
+            margin: 0 .625rem;
+        }
+        &.collapsed::after,
+        &.collapsed::before {
+            content: icon-char(plus);
+        }
+        .show-expanded {
+            display: none;
+        }
+        .show-collapsed {
+            display: inline-block;
+        }
+        &.collapsed {
+            .show-expanded {
+                display: inline-block;
+            }
+            .show-collapsed {
+                display: none;
+            }
+        }
+    }
+    .read-more-list {
+        list-style-type: none;
+        li {
+            position: relative;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: $black;
+            text-align: start;
+            margin-bottom: 0.5rem;
+            span,
+            a {
+                color: $red;
+            }
+        }
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer {
+    background-color: $pink;
+    padding: 2.5rem 0 1.5rem 0;
+    @include media-breakpoint-down(md) {
+        padding: 1.5rem 0 .625rem 0;
+    }
+    .list-inline {
+        .list-inline-item {
+            margin-right: 0;
+            .btn-link {
+                font-size: 1.125rem;
+                --bs-link-color: #{$black};
+                --bs-link-hover-color: #{$red};
+                @include media-breakpoint-down(md) {
+                    font-size: .813rem;
+                }
+            }
+        }
+    }
+}

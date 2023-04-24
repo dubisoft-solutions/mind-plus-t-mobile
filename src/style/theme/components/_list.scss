@@ -1,0 +1,8 @@
+.list-items {
+    .list-item {
+        font-size: .938rem;
+        @include media-breakpoint-down(md) {
+            font-size: .75rem;
+        }
+    }
+}
