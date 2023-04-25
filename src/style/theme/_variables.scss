@@ -11,17 +11,18 @@ $black: #110E3A;
 $font-size-base: .75rem;
 $line-height-base: 1;
 $line-height-sm: 1.5;
-$h1-font-size: 2.375rem;
+$h1-font-size: 4.75rem;
 $headings-line-height: 1;
 $headings-font-weight: 800;
 $headings-color: $red;
 $font-weight-medium: 500;
+$font-sizes: ( 1: 1.5rem);
 $spacer: 1rem;
 $spacers: ( 0: 0, 1: $spacer * .25, 2: $spacer * .5, 3: $spacer, 4: $spacer * 1.5, 5: $spacer * 3);
 // break points
 $grid-breakpoints: (xxc:0, xs: 390px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1440px, xxxl: 1548px, xxxxl: 1920px, xxxxxl: 2560px);
 // containers
-$container-max-widths: (xc: 100%, sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1267px, xxxl: 1375px, xxxxl: 1747px, xxxxxl: 2387px);
+$container-max-widths: (xc: 100%, sm: 540px, md: 720px, lg: 760px, xl: 960px, xxl: 1008px, xxxl: 1375px, xxxxl: 1747px, xxxxxl: 2387px);
 // border
 $border-radius-md: 1.875rem!default;
 // buttons

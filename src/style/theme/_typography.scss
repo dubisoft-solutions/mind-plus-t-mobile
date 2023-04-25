@@ -5,5 +5,7 @@ p {
 }
 
 h1 {
-    font-size: 2.375rem;
+    @include media-breakpoint-down(md) {
+        font-size: 2.375rem;
+    }
 }
