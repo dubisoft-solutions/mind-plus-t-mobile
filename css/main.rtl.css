@@ -10608,11 +10608,6 @@ p {
   background-repeat: no-repeat;
   z-index: -1;
 }
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .index .hero::after {
-    background-image: url("../img/hero-decor-right-middle.svg");
-  }
-}
 @media (max-width: 991.98px) {
   .index .hero::after {
     display: none;
