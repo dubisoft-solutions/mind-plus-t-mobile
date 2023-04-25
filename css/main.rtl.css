@@ -14813,7 +14813,6 @@ textarea.form-control-lg {
   margin-top: 0.438rem;
   top: initial;
   bottom: calc(100% + 0.75rem);
-  right: calc(var(--bs-gutter-x) * 0.5);
 }
 @media (max-width: 767.98px) {
   .invalid-tooltip {
@@ -15065,10 +15064,11 @@ h1, .h1 {
 .index {
   background-color: #FDE7EF;
 }
-.index main .main-bg {
+.index .hero .main-bg {
   position: relative;
+  height: 78vw;
 }
-.index main .main-bg::before {
+.index .hero .main-bg::before {
   width: 100%;
   height: 100%;
   content: "";
@@ -15080,6 +15080,11 @@ h1, .h1 {
   background-repeat: no-repeat;
   z-index: -1;
   background-size: contain;
+}
+@media (min-width: 768px) {
+  .index .hero .main-bg {
+    height: 76vw;
+  }
 }
 .index .read-more-link {
   font-size: 0.875rem;
@@ -15140,32 +15145,24 @@ h1, .h1 {
 .index .read-more-list li a {
   color: #FF6868;
 }
-
-.main {
+.index .main {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-
-.footer {
+.index .footer {
   background-color: #FDE7EF;
-  padding: 2.5rem 0 1.5rem 0;
 }
-@media (max-width: 767.98px) {
-  .footer {
-    padding: 1.5rem 0 0.625rem 0;
-  }
-}
-.footer .list-inline .list-inline-item {
+.index .footer .list-inline .list-inline-item {
   margin-left: 0;
 }
-.footer .list-inline .list-inline-item .btn-link {
+.index .footer .list-inline .list-inline-item .btn-link {
   font-size: 1.125rem;
   --bs-link-color: #110E3A;
   --bs-link-hover-color: #FF6868;
 }
 @media (max-width: 767.98px) {
-  .footer .list-inline .list-inline-item .btn-link {
+  .index .footer .list-inline .list-inline-item .btn-link {
     font-size: 0.813rem;
   }
 }
