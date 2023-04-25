@@ -10,9 +10,3 @@ a {
 .border-end {
     border-right: 1px solid $black-70!important;
 }
-
-.mt-6 {
-    @include media-breakpoint-up(sm) {
-        margin-top: 36.75rem!important;
-    }
-}
