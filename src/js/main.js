@@ -1,11 +1,10 @@
 //= ../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
-//= ../../node_modules/jquery/dist/jquery.slim.min.js
-//= ../../node_modules/bootstrap-select/dist/js/bootstrap-select.min.js
 
+main();
 
-$(function() {
+function main() {
     initFormValidation();
-});
+}
 
 function initFormValidation() {
     const forms = document.querySelectorAll('.needs-validation')
