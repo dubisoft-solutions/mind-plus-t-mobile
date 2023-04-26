@@ -10615,7 +10615,7 @@ p {
 }
 .index .hero .main-bg {
   position: relative;
-  height: 75vw;
+  height: 78vw;
 }
 .index .hero .main-bg::before {
   width: 100%;
@@ -10624,15 +10624,20 @@ p {
   display: block;
   position: absolute;
   top: 0;
-  background-image: url("../img/landing-img.png");
+  background-image: url("../img/landing-img-mobile.svg");
   background-position: top center;
   background-repeat: no-repeat;
   z-index: -1;
   background-size: contain;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
+  .index .hero .main-bg::before {
+    background-image: url("../img/landing-img-desktop.svg");
+  }
+}
+@media (min-width: 992px) {
   .index .hero .main-bg {
-    height: 76vw;
+    height: 30vw;
   }
 }
 .index .read-more-link {
