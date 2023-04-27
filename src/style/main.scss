@@ -138,13 +138,20 @@
         .list-inline {
             .list-inline-item {
                 margin-right: 0;
+                border-right: 1px solid $black-70;
                 .btn-link {
-                    font-size: 1.125rem;
+                    font-size: .75rem;
                     --bs-link-color: #{$black};
                     --bs-link-hover-color: #{$red};
-                    @include media-breakpoint-down(lg) {
-                        font-size: .813rem;
-                    }
+                }
+            }
+            .list-inline-item:last-child {
+                border-right: none;
+            }
+            .list-inline-item.border-right:last-child {
+                border-right: 1px solid $black-70;
+                @include media-breakpoint-down(lg) {
+                    border-right: none;
                 }
             }
         }
