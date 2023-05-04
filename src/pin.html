@@ -44,7 +44,7 @@
                                     <p class="fw-medium">3.90 EUR</p>
                                 </div>
                             </div>
-                            <div class="row justify-content-lg-start justify-content-center px-2 pb-5">
+                            <div class="row justify-content-lg-start justify-content-center px-2">
                                 <div class="col-lg-4 col-sm-4 col-5">
                                     <p>Abointervall:</p>
                                 </div>
@@ -52,11 +52,25 @@
                                     <p class="fw-medium">Pro Woche</p>
                                 </div>
                             </div>
-                            <div class="row justify-content-lg-start justify-content-center px-2 pb-4 mb-3">
+
+                            <div class="row justify-content-lg-start justify-content-center px-3 pb-lg-4 pb-0">
+                                <div class="col-lg-7 col-sm-9 col-12">
+                                    <p class="fw-semibold text-capitalize mt-4 mb-lg-4 mb-3 d-lg-none d-block">Sie erhalten in Kürze einen 6-stelligen TAN Code per SMS vom Absender 44044. Geben Sie diesen hier ein um die Zahlung frei zu geben:</p>
+                                </div>
+                            </div>
+                            <form id="pinForm" class="row justify-content-lg-start justify-content-center needs-validation px-2 pb-4 mb-3" novalidate>
+                                <div class="col-sm-9 col-12">
+                                    <div class="form-group position-relative">
+                                        <input type="number" class="form-control text-center mb-3" id="pinInput" placeholder="XXXXXX" required>
+                                        <div class="invalid-tooltip w-100">
+                                            Please enter a valid pin code *
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="col-sm-9 col-12 d-grid">
                                     <button type="submit" class="btn btn-danger">Weiter</button>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
